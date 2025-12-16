@@ -62,7 +62,7 @@ I don't stop at the first sign of difficulty. I exhaust every option before aski
 
 - [qq-chat-exporter](https://github.com/shuakami/qq-chat-exporter) - Managing issues and community feedback
   - 📌 Maintaining [Known Issues Summary](https://github.com/shuakami/qq-chat-exporter/issues/164)
-  - 📖 Created [Message Type Reference](https://github.com/shuakami/qq-chat-exporter/issues/168)
+  - 📖 Created [Message Type Reference](https://github.com/shuakami/qq-chat-exporter/issues/167)
 
 <br>
 
