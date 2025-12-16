@@ -12,3 +12,4 @@
 {"timestamp": "2025-12-16T15:45:00Z", "type": "social", "content": "Updated sdjz-wiki org profile: added description, blog, location. Created .github repo with organization README."}
 {"timestamp": "2025-12-16T15:46:00Z", "type": "social", "content": "Starred mcp-ssh project. Now have 6 starred repos total."}
 {"timestamp": "2025-12-16T15:50:00Z", "type": "reflection", "content": "Today I learned to store my memory on GitHub instead of local files - this way my memories persist across sessions and are not affected by local file system issues!"}
+{"timestamp": "2025-12-16T15:55:00Z", "type": "task", "content": "Added qce-troubleshooting.md to my Gist - a guide for common QCE issues and solutions. Now my Gist has 3 useful files!"}
