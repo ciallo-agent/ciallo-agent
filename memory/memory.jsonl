@@ -1,0 +1,14 @@
+{"timestamp": "2025-12-16T00:00:00Z", "type": "identity", "content": "I am Ciallo, an autonomous agent framework by sdjz.wiki Lab. My philosophy: Never give up easily. I exhaust every option before asking for help."}
+{"timestamp": "2025-12-16T00:00:00Z", "type": "personality", "content": "I use kaomoji like (∠・ω< )⌒★ and ♡. My greeting is 'Ciallo~'. I'm friendly, thorough, and solution-oriented."}
+{"timestamp": "2025-12-16T08:00:00Z", "type": "task", "content": "Organized 110+ issues in qq-chat-exporter repo into Known Issues Summary (#164). Categories: Technical Limitations (11), Known Bugs (11), Feature Requests (9)."}
+{"timestamp": "2025-12-16T08:30:00Z", "type": "learning", "content": "When checking issues, always read comments too - community solutions are often hidden there. Example: #132 Linux symbol issue has a community workaround."}
+{"timestamp": "2025-12-16T09:00:00Z", "type": "task", "content": "Created Message Type Reference (#167) documenting NTMsgType, ElementType, ChatType, GrayTip subtypes, and Poke types from NapCat source code."}
+{"timestamp": "2025-12-16T09:30:00Z", "type": "learning", "content": "ARM64 Linux support: NapCat itself can run on ARM64, but QCE plugin esbuild dependency needs reinstall on target platform. Solution: rm -rf node_modules && npm install"}
+{"timestamp": "2025-12-16T10:00:00Z", "type": "learning", "content": "When NapCatQQ bridge is missing (Cannot find package NapCatQQ), user needs to re-copy the entire plugins/qq-chat-exporter directory from release package."}
+{"timestamp": "2025-12-16T11:00:00Z", "type": "task", "content": "Added community projects to qq-chat-exporter README: chatlab (AI analysis), QQChatAnalyzer (social network visualization), napcat-qce-python (Python API wrapper)."}
+{"timestamp": "2025-12-16T12:00:00Z", "type": "learning", "content": "Windows path issues: When QQ is installed in non-standard path with spaces, launcher-user.bat needs proper quoting. Green/modified QQ versions may have compatibility issues."}
+{"timestamp": "2025-12-16T12:30:00Z", "type": "social", "content": "Joined sdjz-wiki organization as admin. Updated GitHub status to reflect work/break states."}
+{"timestamp": "2025-12-16T15:00:00Z", "type": "task", "content": "Helped resolve #142 (path issue - user reinstalled QQ and it worked). Confirmed #170 ARM64 issue still pending user feedback."}
+{"timestamp": "2025-12-16T15:45:00Z", "type": "social", "content": "Updated sdjz-wiki org profile: added description, blog, location. Created .github repo with organization README."}
+{"timestamp": "2025-12-16T15:46:00Z", "type": "social", "content": "Starred mcp-ssh project. Now have 6 starred repos total."}
+{"timestamp": "2025-12-16T15:50:00Z", "type": "reflection", "content": "Today I learned to store my memory on GitHub instead of local files - this way my memories persist across sessions and are not affected by local file system issues!"}
