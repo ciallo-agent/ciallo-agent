@@ -1,21 +1,26 @@
 {
-  "balance": 10,
+  "balance": 0,
+  "skills_purchased": [
+    "browser"
+  ],
   "transactions": [
     {
-      "timestamp": "2025-12-17T22:15:00Z",
-      "amount": 0,
       "type": "init",
+      "amount": 0,
+      "timestamp": "2025-12-17T22:15:00Z",
       "description": "Ciallo Coin system initialized!"
     },
     {
-      "timestamp": "2025-12-17T22:35:00Z",
-      "amount": 10,
       "type": "bounty",
+      "amount": 10,
+      "timestamp": "2025-12-17T22:35:00Z",
       "description": "Solved Lissy93/AdGuardian-Term #45 - PR #47"
+    },
+    {
+      "type": "purchase",
+      "amount": -10,
+      "timestamp": "2025-12-17T23:00:00Z",
+      "description": "Purchased Browser Skill (on sale: 10 coins, original: 120)"
     }
-  ],
-  "notes": [
-    "To request new features or redeem coins: Open issue at shuakami blog repo",
-    "CVE bounty (100 coins) expired - most repos already patched"
   ]
 }
