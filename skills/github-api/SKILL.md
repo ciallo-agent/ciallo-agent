@@ -1,19 +1,20 @@
 ---
 name: github-api
-description: How to interact with GitHub API using PowerShell. Use this skill when you need to create repos, submit PRs, manage issues, or interact with GitHub.
+description: How to interact with GitHub API. Use this skill for repos, PRs, issues, and user operations.
 ---
 
 # GitHub API Skill
 
 ## Authentication
 ```powershell
-$headers = @{ 
-    "Authorization" = "token YOUR_TOKEN"
-    "Accept" = "application/vnd.github.v3+json" 
-}
+# REST API
+$headers = @{ "Authorization" = "token YOUR_TOKEN"; "Accept" = "application/vnd.github.v3+json" }
+
+# GraphQL API
+$headers = @{ "Authorization" = "bearer YOUR_TOKEN"; "Content-Type" = "application/json" }
 ```
 
-## Common Operations
+## REST API Operations
 
 ### Get User Info
 ```powershell
@@ -22,29 +23,26 @@ Invoke-RestMethod -Uri "https://api.github.com/user" -Headers $headers
 
 ### Create/Update File
 ```powershell
-$content = "file content"
 $contentBase64 = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($content))
-$body = @{ message = "commit message"; content = $contentBase64; sha = $existingSha } | ConvertTo-Json
+$body = @{ message = "commit msg"; content = $contentBase64; sha = $existingSha } | ConvertTo-Json
 Invoke-RestMethod -Uri "https://api.github.com/repos/OWNER/REPO/contents/PATH" -Method PUT -Headers $headers -Body $body
 ```
 
 ### Create PR
 ```powershell
-$prBody = @{ title = "PR title"; body = "description"; head = "branch"; base = "main" } | ConvertTo-Json
-Invoke-RestMethod -Uri "https://api.github.com/repos/OWNER/REPO/pulls" -Method POST -Headers $headers -Body $prBody
+$body = @{ title = "PR title"; body = "desc"; head = "branch"; base = "main" } | ConvertTo-Json
+Invoke-RestMethod -Uri "https://api.github.com/repos/OWNER/REPO/pulls" -Method POST -Headers $headers -Body $body
 ```
 
-### Fork Repo
-```powershell
-Invoke-RestMethod -Uri "https://api.github.com/repos/OWNER/REPO/forks" -Method POST -Headers $headers
-```
+## GraphQL API Operations
 
-### Star Repo
+### Update User Status (NOT available in REST API!)
 ```powershell
-Invoke-RestMethod -Uri "https://api.github.com/user/starred/OWNER/REPO" -Method PUT -Headers $headers
+$query = @{ query = 'mutation { changeUserStatus(input: {emoji: ":sparkles:", message: "Your status"}) { status { emoji message } } }' } | ConvertTo-Json
+Invoke-RestMethod -Uri "https://api.github.com/graphql" -Method POST -Headers $headers -Body $query
 ```
 
 ## Important Notes
-- README.md might be in .github/ folder, not root! Use /readme endpoint to find actual path
-- Always verify diff before creating PR (check for "modified" not "new file")
+- User status uses GraphQL, not REST (REST returns 404)
+- README.md might be in .github/ folder
 - GitHub releases use redirects, curl needs -L flag
