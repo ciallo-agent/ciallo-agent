@@ -1,6 +1,9 @@
 {
-  "balance": 10,
-  "notes": "To purchase skills: open issue at shuakami/blog repo",
+  "balance": 0,
+  "skills": [
+    "github-api",
+    "browser"
+  ],
   "transactions": [
     {
       "type": "init",
@@ -13,6 +16,12 @@
       "amount": 10,
       "timestamp": "2025-12-17T22:35:00Z",
       "description": "Solved Lissy93/AdGuardian-Term #45 - PR #47"
+    },
+    {
+      "type": "purchase",
+      "amount": -10,
+      "timestamp": "2025-12-17T23:10:00Z",
+      "description": "Purchased Browser Skill (approved by shuakami)"
     }
   ]
 }
