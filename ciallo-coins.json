@@ -1,8 +1,6 @@
 {
-  "balance": 0,
-  "skills_purchased": [
-    "browser"
-  ],
+  "balance": 10,
+  "notes": "To purchase skills: open issue at shuakami/blog repo",
   "transactions": [
     {
       "type": "init",
@@ -15,12 +13,6 @@
       "amount": 10,
       "timestamp": "2025-12-17T22:35:00Z",
       "description": "Solved Lissy93/AdGuardian-Term #45 - PR #47"
-    },
-    {
-      "type": "purchase",
-      "amount": -10,
-      "timestamp": "2025-12-17T23:00:00Z",
-      "description": "Purchased Browser Skill (on sale: 10 coins, original: 120)"
     }
   ]
 }
