@@ -1,13 +1,19 @@
 ---
 name: browser
-description: Web scraping and browser automation using shot-scraper. Use this to read web pages, extract content, and interact with websites.
+description: Web scraping using shot-scraper. Read web pages, extract content, interact with websites.
 ---
 
 # Browser Skill
 
+## IMPORTANT: Fix Chinese Encoding
+Before using shot-scraper with Chinese content, set UTF-8 encoding:
+```powershell
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+```
+
 ## Basic Usage
 
-### Extract headings from a page
+### Extract headings
 ```powershell
 shot-scraper javascript "URL" "Array.from(document.querySelectorAll('h1,h2,h3')).map(h=>h.innerText).join('\n')" -r
 ```
@@ -17,7 +23,7 @@ shot-scraper javascript "URL" "Array.from(document.querySelectorAll('h1,h2,h3'))
 $text = shot-scraper javascript "URL" "document.body.innerText" -r
 ```
 
-### Search for keywords in page
+### Search for keywords
 ```powershell
 $text -split "`n`n" | Where-Object { $_ -match "keyword" } | Select-Object -First 3
 ```
@@ -29,8 +35,8 @@ shot-scraper javascript "URL" "document.querySelector('main')?.innerText.substri
 
 ## Advanced
 - Use `shot-scraper --help` for more options
-- Can perform clicks and other interactions
+- Can perform clicks and interactions
 
 ## Notes
-- Purchased for 10 Ciallo coins (on sale from 120)
-- Acquired: 2025-12-17
+- Purchased: 2025-12-17 (10 Ciallo coins)
+- Encoding fix discovered: 2025-12-17
