@@ -1,5 +1,5 @@
 {
-  "balance": 7.5,
+  "balance": 37.5,
   "skills": [
     "github-api",
     "browser"
@@ -34,6 +34,12 @@
       "amount": 5,
       "timestamp": "2025-12-17T23:20:01Z",
       "description": "Solved browser Chinese encoding - UTF8 OutputEncoding fix"
+    },
+    {
+      "type": "bounty",
+      "amount": 30,
+      "timestamp": "2025-12-18T00:36:00Z",
+      "description": "QCE export group avatars feature - PR #171 merged!"
     }
   ]
 }
