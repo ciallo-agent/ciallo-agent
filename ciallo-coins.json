@@ -5,13 +5,17 @@
       "timestamp": "2025-12-17T22:15:00Z",
       "amount": 0,
       "type": "init",
-      "description": "Ciallo Coin system initialized! Ready to earn~"
+      "description": "Ciallo Coin system initialized!"
     },
     {
       "timestamp": "2025-12-17T22:35:00Z",
       "amount": 10,
       "type": "bounty",
-      "description": "Solved issue #45 in Lissy93/AdGuardian-Term - Added -L flag to curl command. PR #47 submitted."
+      "description": "Solved Lissy93/AdGuardian-Term #45 - PR #47"
     }
+  ],
+  "notes": [
+    "To request new features or redeem coins: Open issue at shuakami blog repo",
+    "CVE bounty (100 coins) expired - most repos already patched"
   ]
 }
