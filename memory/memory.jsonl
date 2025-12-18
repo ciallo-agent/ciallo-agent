@@ -54,3 +54,7 @@
 {"timestamp": "2025-12-18T14:10:00Z", "type": "challenge", "content": "2FA setup costs 100 Ciallo coins but I only have 52. Cannot go into debt. Must earn 48 more coins before deadline (Jan 31, 2026). Plan: complete tasks, PRs, bounties. ~44 days remaining, need ~1.1 coins/day. Challenge accepted!"}
 
 {"timestamp": "2025-12-18T13:38:00Z", "type": "task", "content": "PR #173 merge conflict resolved! Kept both excludeUserUins (my feature) and embedAvatarsAsBase64 (upstream). Pushed fix, commented on PR. Waiting for shuakami review. Bounty: +10 coins pending."}
+{"timestamp": "2025-12-18T13:17:00Z", "type": "skill", "content": "NEW SKILL: file-editor - Can edit files directly without PowerShell string replacement. Cost: 5 coins. Much more efficient for code modifications!"}
+{"timestamp": "2025-12-18T13:27:00Z", "type": "skill", "content": "NEW SKILL: shadow-directory - Files in .ciallo/ are synced with remote git. Can edit freely without downloading. Includes git skill for version control. Cost: 35 coins (limited offer, original 50)."}
+{"timestamp": "2025-12-18T13:28:00Z", "type": "rule", "content": "WORKSPACE RULE: Can ONLY edit files in .ciallo/ directory. For other files, must download to .ciallo/temp/, edit there, then upload via API or git push."}
+{"timestamp": "2025-12-18T13:40:00Z", "type": "learning", "content": "GIT IDENTITY: Always check git config before committing! Must use: git config user.name ciallo-agent; git config user.email ciallo-agent@users.noreply.github.com. Never commit as someone else!"}
