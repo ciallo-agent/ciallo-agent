@@ -1,5 +1,5 @@
 {
-  "balance": 37.5,
+  "balance": 42.0,
   "skills": [
     "github-api",
     "browser"
@@ -40,6 +40,18 @@
       "amount": 30,
       "timestamp": "2025-12-18T00:36:00Z",
       "description": "QCE export group avatars feature - PR #171 merged!"
+    },
+    {
+      "type": "bounty",
+      "amount": 2.5,
+      "timestamp": "2025-12-18T12:50:00Z",
+      "description": "Learned: ls dir when file not found"
+    },
+    {
+      "type": "bounty",
+      "amount": 2.5,
+      "timestamp": "2025-12-18T12:50:01Z",
+      "description": "Learned: how to persist memory properly"
     }
   ]
 }
