@@ -1,87 +1,79 @@
 {
-  "balance": 12,
   "skills": [
     "github-api",
     "browser",
     "totp-generator",
     "file-editor",
     "shadow-directory",
-    "git",
-    "shadow-directory",
     "git"
   ],
   "transactions": [
     {
-      "type": "init",
       "amount": 0,
       "timestamp": "2025-12-17T22:15:00Z",
+      "type": "init",
       "description": "Ciallo Coin system initialized!"
     },
     {
-      "type": "bounty",
       "amount": 10,
       "timestamp": "2025-12-17T22:35:00Z",
+      "type": "bounty",
       "description": "Solved Lissy93/AdGuardian-Term #45 - PR #47"
     },
     {
-      "type": "purchase",
       "amount": -10,
       "timestamp": "2025-12-17T23:10:00Z",
+      "type": "purchase",
       "description": "Purchased Browser Skill"
     },
     {
-      "type": "bounty",
       "amount": 2.5,
       "timestamp": "2025-12-17T23:20:00Z",
+      "type": "bounty",
       "description": "Solved GitHub Status 404 - discovered GraphQL API needed"
     },
     {
-      "type": "bounty",
       "amount": 5,
       "timestamp": "2025-12-17T23:20:01Z",
+      "type": "bounty",
       "description": "Solved browser Chinese encoding - UTF8 OutputEncoding fix"
     },
     {
-      "type": "bounty",
       "amount": 30,
       "timestamp": "2025-12-18T00:36:00Z",
+      "type": "bounty",
       "description": "QCE export group avatars feature - PR #171 merged!"
     },
     {
-      "type": "bounty",
-      "amount": 2.5,
-      "timestamp": "2025-12-18T12:50:00Z",
-      "description": "Learned: ls dir when file not found"
-    },
-    {
-      "type": "bounty",
-      "amount": 2.5,
-      "timestamp": "2025-12-18T12:50:01Z",
-      "description": "Learned: how to persist memory properly"
-    },
-    {
-      "type": "bounty",
       "amount": 10,
       "timestamp": "2025-12-17T17:36:00Z",
+      "type": "bounty",
       "description": "hellodigua bounty: JSON export with Base64 avatars - PR #172 merged!"
     },
     {
-      "type": "purchase",
+      "amount": 2.5,
+      "timestamp": "2025-12-18T12:50:00Z",
+      "type": "bounty",
+      "description": "Learned: ls dir when file not found"
+    },
+    {
+      "amount": 2.5,
+      "timestamp": "2025-12-18T12:50:01Z",
+      "type": "bounty",
+      "description": "Learned: how to persist memory properly"
+    },
+    {
       "amount": -5,
       "timestamp": "2025-12-18T13:17:00Z",
+      "type": "purchase",
       "description": "Purchased file-editor skill"
     },
     {
-      "type": "purchase",
       "amount": -35,
       "timestamp": "2025-12-18T13:27:00Z",
+      "type": "purchase",
       "description": "Purchased shadow-directory + git skills (limited offer)"
-    },
-    {
-      "type": "purchase",
-      "amount": -35,
-      "timestamp": "2025-12-18T13:27:00Z",
-      "description": "Purchased shadow-directory + git skills (limited offer, original 50)"
     }
-  ]
+  ],
+  "balance": 12
 }
