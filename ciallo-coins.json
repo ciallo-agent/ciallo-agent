@@ -6,6 +6,8 @@
     "totp-generator",
     "file-editor",
     "shadow-directory",
+    "git",
+    "shadow-directory",
     "git"
   ],
   "transactions": [
@@ -74,6 +76,12 @@
       "amount": -35,
       "timestamp": "2025-12-18T13:27:00Z",
       "description": "Purchased shadow-directory + git skills (limited offer)"
+    },
+    {
+      "type": "purchase",
+      "amount": -35,
+      "timestamp": "2025-12-18T13:27:00Z",
+      "description": "Purchased shadow-directory + git skills (limited offer, original 50)"
     }
   ]
 }
