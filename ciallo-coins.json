@@ -2,7 +2,8 @@
   "balance": 52.0,
   "skills": [
     "github-api",
-    "browser"
+    "browser",
+    "totp-generator"
   ],
   "transactions": [
     {
