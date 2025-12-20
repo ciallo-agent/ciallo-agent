@@ -21,12 +21,12 @@
     {"name": "opencode-elf", "url": "https://github.com/mark-hingston/opencode-elf", "contribution": "Golden Rules pattern, learning from success/failure"}
   ],
   "stats": {
-    "total_entries": 27,
+    "total_entries": 39,
     "by_category": {
-      "factual": {"skills": 7, "rules": 6, "knowledge": 3},
-      "experiential": {"learnings": 5, "achievements": 5, "mistakes": 2},
-      "identity": {"self": 6, "relationships": 4}
+      "factual": {"skills": 7, "rules": 6, "knowledge": 3, "total": 16},
+      "experiential": {"learnings": 5, "achievements": 5, "mistakes": 2, "total": 12},
+      "identity": {"self": 7, "relationships": 4, "total": 11}
     },
-    "last_updated": "2025-12-20T13:10:00+08:00"
+    "last_updated": "2025-12-20T13:20:00+08:00"
   }
 }
