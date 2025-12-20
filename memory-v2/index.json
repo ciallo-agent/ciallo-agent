@@ -1,0 +1,35 @@
+{
+  "version": "2.0",
+  "created": "2025-12-20T13:00:00+08:00",
+  "description": "Ciallo Memory System v2 - Inspired by Agent-Memory-Paper-List taxonomy",
+  "architecture": {
+    "factual": {
+      "description": "Token-level factual memory - skills, rules, knowledge",
+      "files": ["factual/skills.jsonl", "factual/rules.jsonl", "factual/knowledge.jsonl"]
+    },
+    "experiential": {
+      "description": "Token-level experiential memory - learnings from successes and failures",
+      "files": ["experiential/learnings.jsonl", "experiential/achievements.jsonl", "experiential/mistakes.jsonl"]
+    },
+    "identity": {
+      "description": "Self-knowledge and relationships",
+      "files": ["identity/self.jsonl", "identity/relationships.jsonl"]
+    }
+  },
+  "schema": {
+    "entry": {
+      "id": "unique identifier (timestamp-based)",
+      "timestamp": "ISO 8601 format",
+      "category": "factual|experiential|identity",
+      "subcategory": "specific type within category",
+      "content": "main content",
+      "context": "optional context/source",
+      "importance": "1-5 scale",
+      "tags": ["array of tags for retrieval"]
+    }
+  },
+  "stats": {
+    "total_entries": 0,
+    "last_updated": "2025-12-20T13:00:00+08:00"
+  }
+}
