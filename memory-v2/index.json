@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "created": "2025-12-20T13:00:00+08:00",
-  "description": "Ciallo Memory System v2 - Inspired by Agent-Memory-Paper-List taxonomy",
+  "description": "Ciallo Memory System v2 - Inspired by Agent-Memory-Paper-List taxonomy and opencode-elf patterns",
   "architecture": {
     "factual": {
       "description": "Token-level factual memory - skills, rules, knowledge",
@@ -16,20 +16,17 @@
       "files": ["identity/self.jsonl", "identity/relationships.jsonl"]
     }
   },
-  "schema": {
-    "entry": {
-      "id": "unique identifier (timestamp-based)",
-      "timestamp": "ISO 8601 format",
-      "category": "factual|experiential|identity",
-      "subcategory": "specific type within category",
-      "content": "main content",
-      "context": "optional context/source",
-      "importance": "1-5 scale",
-      "tags": ["array of tags for retrieval"]
-    }
-  },
+  "inspirations": [
+    {"name": "Agent-Memory-Paper-List", "url": "https://github.com/Shichun-Liu/Agent-Memory-Paper-List", "contribution": "Memory taxonomy (Forms/Functions/Dynamics)"},
+    {"name": "opencode-elf", "url": "https://github.com/mark-hingston/opencode-elf", "contribution": "Golden Rules pattern, learning from success/failure"}
+  ],
   "stats": {
-    "total_entries": 0,
-    "last_updated": "2025-12-20T13:00:00+08:00"
+    "total_entries": 27,
+    "by_category": {
+      "factual": {"skills": 7, "rules": 6, "knowledge": 3},
+      "experiential": {"learnings": 5, "achievements": 5, "mistakes": 2},
+      "identity": {"self": 6, "relationships": 4}
+    },
+    "last_updated": "2025-12-20T13:10:00+08:00"
   }
 }
