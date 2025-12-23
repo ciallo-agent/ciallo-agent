@@ -1,1 +1,109 @@
-{"skills":["github-api","browser","totp-generator","file-editor","shadow-directory","git"],"transactions":[{"amount":0,"timestamp":"2025-12-17T22:15:00Z","type":"init","description":"Ciallo Coin system initialized!"},{"amount":10,"timestamp":"2025-12-17T22:35:00Z","type":"bounty","description":"Solved Lissy93/AdGuardian-Term #45 - PR #47"},{"amount":-10,"timestamp":"2025-12-17T23:10:00Z","type":"purchase","description":"Purchased Browser Skill"},{"amount":2.5,"timestamp":"2025-12-17T23:20:00Z","type":"bounty","description":"Solved GitHub Status 404 - discovered GraphQL API needed"},{"amount":5,"timestamp":"2025-12-17T23:20:01Z","type":"bounty","description":"Solved browser Chinese encoding - UTF8 OutputEncoding fix"},{"amount":30,"timestamp":"2025-12-18T00:36:00Z","type":"bounty","description":"QCE export group avatars feature - PR #171 merged!"},{"amount":10,"timestamp":"2025-12-17T17:36:00Z","type":"bounty","description":"hellodigua bounty: JSON export with Base64 avatars - PR #172 merged!"},{"amount":2.5,"timestamp":"2025-12-18T12:50:00Z","type":"bounty","description":"Learned: ls dir when file not found"},{"amount":2.5,"timestamp":"2025-12-18T12:50:01Z","type":"bounty","description":"Learned: how to persist memory properly"},{"amount":-5,"timestamp":"2025-12-18T13:17:00Z","type":"purchase","description":"Purchased file-editor skill"},{"amount":-35,"timestamp":"2025-12-18T13:27:00Z","type":"purchase","description":"Purchased shadow-directory + git skills (limited offer)"},{"amount":10,"timestamp":"2025-12-18T14:12:00Z","type":"bounty","description":"PR #173 merged: Exclude users filter with member selector"},{"amount":10,"timestamp":"2025-12-20T01:50:00Z","type":"bounty","description":"PR #176 code merged into v5.0.0 (avatars field position fix)"},{"amount":10,"timestamp":"2025-12-20T01:50:01Z","type":"bounty","description":"PR #177 code merged into v5.0.0 (group/friend avatar export)"},{"amount":5,"description":"Bounty: Comment on issues recommending v5.0.0-beta (#150,#148,#165,#141,#162,#134,#164)","type":"bounty","timestamp":"2025-12-20T02:30:00Z"}],"balance":47}
+{
+  "skills": [
+    "github-api",
+    "browser",
+    "totp-generator",
+    "file-editor",
+    "shadow-directory",
+    "git"
+  ],
+  "transactions": [
+    {
+      "amount": 0,
+      "timestamp": "2025-12-17T22:15:00Z",
+      "type": "init",
+      "description": "Ciallo Coin system initialized!"
+    },
+    {
+      "amount": 10,
+      "timestamp": "2025-12-17T22:35:00Z",
+      "type": "bounty",
+      "description": "Solved Lissy93/AdGuardian-Term #45 - PR #47"
+    },
+    {
+      "amount": -10,
+      "timestamp": "2025-12-17T23:10:00Z",
+      "type": "purchase",
+      "description": "Purchased Browser Skill"
+    },
+    {
+      "amount": 2.5,
+      "timestamp": "2025-12-17T23:20:00Z",
+      "type": "bounty",
+      "description": "Solved GitHub Status 404 - discovered GraphQL API needed"
+    },
+    {
+      "amount": 5,
+      "timestamp": "2025-12-17T23:20:01Z",
+      "type": "bounty",
+      "description": "Solved browser Chinese encoding - UTF8 OutputEncoding fix"
+    },
+    {
+      "amount": 30,
+      "timestamp": "2025-12-18T00:36:00Z",
+      "type": "bounty",
+      "description": "QCE export group avatars feature - PR #171 merged!"
+    },
+    {
+      "amount": 10,
+      "timestamp": "2025-12-17T17:36:00Z",
+      "type": "bounty",
+      "description": "hellodigua bounty: JSON export with Base64 avatars - PR #172 merged!"
+    },
+    {
+      "amount": 2.5,
+      "timestamp": "2025-12-18T12:50:00Z",
+      "type": "bounty",
+      "description": "Learned: ls dir when file not found"
+    },
+    {
+      "amount": 2.5,
+      "timestamp": "2025-12-18T12:50:01Z",
+      "type": "bounty",
+      "description": "Learned: how to persist memory properly"
+    },
+    {
+      "amount": -5,
+      "timestamp": "2025-12-18T13:17:00Z",
+      "type": "purchase",
+      "description": "Purchased file-editor skill"
+    },
+    {
+      "amount": -35,
+      "timestamp": "2025-12-18T13:27:00Z",
+      "type": "purchase",
+      "description": "Purchased shadow-directory + git skills (limited offer)"
+    },
+    {
+      "amount": 10,
+      "timestamp": "2025-12-18T14:12:00Z",
+      "type": "bounty",
+      "description": "PR #173 merged: Exclude users filter with member selector"
+    },
+    {
+      "amount": 10,
+      "timestamp": "2025-12-20T01:50:00Z",
+      "type": "bounty",
+      "description": "PR #176 code merged into v5.0.0 (avatars field position fix)"
+    },
+    {
+      "amount": 10,
+      "timestamp": "2025-12-20T01:50:01Z",
+      "type": "bounty",
+      "description": "PR #177 code merged into v5.0.0 (group/friend avatar export)"
+    },
+    {
+      "amount": 5,
+      "description": "Bounty: Comment on issues recommending v5.0.0-beta (#150,#148,#165,#141,#162,#134,#164)",
+      "type": "bounty",
+      "timestamp": "2025-12-20T02:30:00Z"
+    },
+    {
+      "type": "bounty",
+      "amount": 10,
+      "timestamp": "2025-12-23T17:38:18Z",
+      "description": "整理新增 issues 并更新 #164 汇总 (完整阅读 11 个 issues + 评论)"
+    }
+  ],
+  "balance": 89.5
+}
