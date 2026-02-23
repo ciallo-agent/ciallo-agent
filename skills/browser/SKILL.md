@@ -1,42 +1,88 @@
 ---
 name: browser
-description: Web scraping using shot-scraper. Read web pages, extract content, interact with websites.
+description: Browser automation using @sdjz/pup. AXTree scanning, stealth mode, DevTools access. Designed for AI agents.
+upgraded: 2026-01-01
 ---
 
-# Browser Skill
+# Browser Skill (pup)
 
-## IMPORTANT: Fix Chinese Encoding
-Before using shot-scraper with Chinese content, set UTF-8 encoding:
+## Install
+```bash
+npm install -g @sdjz/pup
+```
+
+## Quick Start
 ```powershell
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+
+pup goto https://example.com     # Open page
+pup scan --no-empty              # Scan elements, get IDs
+pup click 5                      # Click element by ID
+pup type 3 "hello" --enter       # Type and press Enter
 ```
 
-## Basic Usage
+## Core Commands
 
-### Extract headings
+### Navigation
 ```powershell
-shot-scraper javascript "URL" "Array.from(document.querySelectorAll('h1,h2,h3')).map(h=>h.innerText).join('\n')" -r
+pup goto <url>                   # Open URL
+pup back / forward               # History
+pup reload                       # Reload
+pup scroll <up|down|top|bottom>  # Scroll
+pup wait <ms>                    # Wait
 ```
 
-### Get full page text
+### Element Interaction
 ```powershell
-$text = shot-scraper javascript "URL" "document.body.innerText" -r
+pup scan --no-empty --limit 30   # Scan viewport elements
+pup find <text>                  # Find by text
+pup click <id>                   # Click element
+pup click <id> --js              # JS click (for modals)
+pup type <id> <text> --enter     # Type + Enter
+pup hover <id>                   # Mouse hover
+pup select <id> <option>         # Select dropdown
 ```
 
-### Search for keywords
+### Tab Management
 ```powershell
-$text -split "`n`n" | Where-Object { $_ -match "keyword" } | Select-Object -First 3
+pup tabs                         # List tabs
+pup tab <id>                     # Switch tab
+pup newtab [url]                 # New tab
+pup close                        # Close current
 ```
 
-### Get main content (first 2000 chars)
+### DevTools
 ```powershell
-shot-scraper javascript "URL" "document.querySelector('main')?.innerText.substring(0,2000)" -r
+pup network --capture            # Enable XHR capture
+pup cookies                      # View cookies
+pup storage                      # View localStorage
+pup exec <js>                    # Execute JavaScript
+pup screenshot [file]            # Take screenshot
 ```
 
-## Advanced
-- Use `shot-scraper --help` for more options
-- Can perform clicks and interactions
+### Performance
+```powershell
+pup perf                         # Quick Web Vitals
+pup perf-network                 # Network waterfall
+pup perf-memory                  # Memory analysis
+```
+
+## Agent Workflow
+```
+1. pup goto https://example.com
+2. pup scan --no-empty           # Get element IDs
+3. LLM decides: click element 5
+4. pup click 5
+5. pup scan --no-empty           # Check result
+6. ...loop
+```
+
+## JSON Mode (for automation)
+```powershell
+pup scan --json                  # JSON output
+```
 
 ## Notes
-- Purchased: 2025-12-17 (10 Ciallo coins)
-- Encoding fix discovered: 2025-12-17
+- Original: shot-scraper (2025-12-17, 10 coins)
+- Upgraded to: @sdjz/pup (2026-01-01, free - shuakami's gift!)
+- Features: AXTree scanning, Bezier mouse movement, stealth mode, plugin architecture
